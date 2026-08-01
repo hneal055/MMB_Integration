@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# SceneIQ Build Script for Render
+
+echo "🎬 Building SceneIQ..."
+
+# Install Python dependencies
+echo "📦 Installing dependencies..."
+pip install -r requirements.txt
+
+# Generate Prisma client
+echo "🔧 Generating Prisma client..."
+python -c "from prisma import generator; generator.generate()"
+
+echo "✅ Build complete!"

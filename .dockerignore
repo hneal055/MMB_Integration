@@ -1,0 +1,96 @@
+# Git
+.git
+.gitignore
+.gitattributes
+
+# Python
+__pycache__
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv
+Lib/
+Scripts/
+Include/
+pyvenv.cfg
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.log
+
+# IDE
+.vscode
+.idea
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Testing
+.pytest_cache
+htmlcov/
+.mypy_cache
+.hypothesis
+
+# Documentation
+docs/
+*.md
+!README.md
+
+# CI/CD
+.github
+.gitlab-ci.yml
+.travis.yml
+
+# Development
+.env.example
+docker-compose.yml
+Makefile
+
+# Node (if any)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Temporary files
+*.tmp
+*.bak
+.tmp/
+
+# Large artifacts / demo packages (keep builds fast)
+*.zip
+*.xlsx
+*.docx
+demo/
+logs/
+
+# Docker
+Dockerfile.dev
+.dockerignore
+
+# Legacy multi-service overhead — unused by the single-service deploy
+# (FastAPI serves the API + built frontend; no nginx/compose/k8s/Render).
+# Kept in the repo for reference but excluded from the image to slim it.
+# NOTE: do NOT ignore backend/ — src/main.py mounts backend/static at /static.
+dashboard-app/
+render.yaml
+nginx.conf
+nginx.railway.conf
+docker-compose.prod.yml
+k8s-deployment.yaml
+start.sh
+start.ps1
+Tax_Incentive_Compliance_Platform/
+backend/app/
+
+# Explicitly include frontend dist
+!frontend/dist

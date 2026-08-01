@@ -1,0 +1,22 @@
+{
+  "name": "tax-incentive-compliance-platform",
+  "version": "0.1.0",
+  "description": "Tax-Incentive Compliance Platform",
+  "scripts": {
+    "db:generate": "prisma generate",
+    "db:migrate": "prisma migrate dev",
+    "db:studio": "prisma studio",
+    "frontend:dev": "cd frontend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "frontend:install": "cd frontend && npm install"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.23",
+    "postcss": "^8.5.6",
+    "prisma": "^5.8.0",
+    "tailwindcss": "^4.1.18"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.8.0"
+  }
+}
